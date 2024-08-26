@@ -12,7 +12,11 @@ rpath = os.path.abspath('..')
 if rpath not in sys.path:
     sys.path.insert(0, rpath)
 
+
 from scripts.utils import *
+
+
+
 def main():
     st.title("Solar Radiation EDA Visualization")
 
