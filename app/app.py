@@ -7,8 +7,7 @@ from scipy import stats
 import matplotlib.dates as mdates
 import os,sys
 
-
-rpath = os.path.abspath('')
+rpath = os.path.abspath('..')
 if rpath not in sys.path:
     sys.path.insert(0, rpath)
 
