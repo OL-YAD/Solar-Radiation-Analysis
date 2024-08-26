@@ -1,3 +1,5 @@
+import sys
+import os
 import streamlit as st 
 import pandas as pd
 import numpy as np
@@ -5,7 +7,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from scipy import stats
 import matplotlib.dates as mdates
-import os,sys
 
 rpath = os.path.abspath('..')
 if rpath not in sys.path:
