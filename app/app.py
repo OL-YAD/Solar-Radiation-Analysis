@@ -1,5 +1,11 @@
-import sys
+import streamlit as st 
+import pandas as pd 
+import os, sys
 import os
+
+rpath = os.path.abspath('..')
+if rpath not in sys.path:
+    sys.path.insert(0, rpath)
 
 import streamlit as st 
 import pandas as pd
@@ -8,13 +14,14 @@ import seaborn as sns
 from scipy import stats
 import matplotlib.dates as mdates
 
-rpath = os.path.abspath('..')
-if rpath not in sys.path:
-    sys.path.insert(0, rpath)
 
 
 
-from scripts.utils import *
+#from scripts.utils import *
+from scripts.utils import (
+    load_data, time_series, clean_data, convert_timestamp,handle_negative_values, plot_time_series_combined, plot_correlation_heatmap,
+    plot_wind_rose, plot_histograms, plot_bubble_chart, analyze_humidity_impact
+)
 
 def main():
     st.title("Solar Radiation EDA Visualization")
