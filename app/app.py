@@ -14,7 +14,6 @@ if rpath not in sys.path:
 
 
 
-
 from scripts.utils import *
 
 def main():
