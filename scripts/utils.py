@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from scipy import stats
 import matplotlib.dates as mdates
+
 def load_data(file_paths):
     dataframes = {}
     for country, path in file_paths.items():
